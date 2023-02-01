@@ -1,0 +1,131 @@
+.calculator
+  width: 400px
+  margin: 40px auto
+  display: flex
+  flex-direction: column
+  padding: 20px
+
+  @media screen and (max-width: 440px)
+    width: 320px
+    margin: 0 auto
+    flex-direction: column-reverse
+    font-size: 12px
+    padding: 10px
+
+
+.calculator-sliders
+  display: flex
+  justify-content: space-between
+  margin-bottom: 20px
+
+.calculator-slider
+  width: 40%
+
+  input
+    width: 100%
+
+.numbers
+  display: flex
+  justify-content: space-between
+  font-size: 11px
+  padding-left: 5px
+
+.calculator-bar
+  height: 100%
+  background-color: gray
+  border: black solid 1px
+  display: flex
+  margin-right: 10px
+
+  &.backblaze-lowest
+    background-color: red
+
+  &.bunny-lowest
+    background-color: orange
+
+  &.scaleway-lowest
+    background-color: purple
+
+  &.vultr-lowest
+    background-color: blue
+
+.calculator-bar-item
+  display: flex
+  align-items: center
+  margin: 20px 0
+  height: 30px
+
+  @media screen and (max-width: 440px)
+    margin: 50px 0
+
+
+.calculator-bar-names
+  margin-right: 10px
+
+  @media screen and (max-width: 440px)
+    display: flex
+    justify-content: space-between
+    margin: 0 0 20px
+
+
+.calculator-bar-name-content
+  height: 30px
+  margin: 20px 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  @media screen and (max-width: 440px)
+    flex-direction: column-reverse
+    margin: 0
+    justify-content: start
+    min-width: 80px
+
+  img
+    width: 30px
+    @media screen and (max-width: 440px)
+      margin-bottom: 5px
+
+  & > div
+    margin-right: 10px
+
+    @media screen and (max-width: 440px)
+      margin-right: 0
+
+.calculator-bar-name-with-radio
+  @media screen and (max-width: 440px)
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.calculator-bars
+  width: 100%
+
+  @media screen and (max-width: 440px)
+    transform: rotate(270deg)
+
+.calculator-bars-container
+  display: flex
+
+  @media screen and (max-width: 440px)
+    margin-bottom: 40px
+    display: flex
+    flex-direction: column-reverse
+
+.calculator-radio-buttons
+  display: flex
+  font-size: 10px
+
+  input
+    margin: 2px
+    width: 10px
+
+  div
+    display: flex
+    align-items: center
+
+    &:first-child
+      margin-right: 5px
+
+      @media screen and (max-width: 440px)
+        margin: 0
